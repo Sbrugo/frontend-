@@ -1,0 +1,58 @@
+html {
+  background-color: #ffec24;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+.column {
+  flex-direction: column;
+}
+main {
+  /* margin: 10%; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+main h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  word-spacing: 1rem;
+  text-align: center;
+}
+i {
+  font-size: 1.3rem;
+  margin-left: 4px;
+}
+
+header nav ul li {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  list-style: none;
+  font-size: 0.7rem;
+}
+header nav ul li:active {
+  text-decoration: overline;
+  display: flex;
+  flex-wrap: wrap;
+} /*probar que esto funcione*/
+header {
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+header h2 {
+  font-size: 1.3rem;
+}

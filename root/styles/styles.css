@@ -34,9 +34,14 @@ main h1 {
   margin: 0% 20%;
   line-height: 130%;
 }
-i {
+.icons {
+  display: flex;
+  padding: 1rem;
   font-size: 1rem;
   margin-right: 20px;
+}
+.icons a{
+  margin: 10px;
 }
 
 header nav ul li {
@@ -82,4 +87,70 @@ section {
 }
 section p {
   font-weight: bold;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto; 
+  padding: 20px; 
+  background-color: #000000; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgb(255, 255, 255); 
+  color: white; 
+}
+
+
+form input[type="text"],
+form input[type="file"] {
+  width: 100%; 
+  padding: 10px; 
+  margin-bottom: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+}
+
+
+form button[type="submit"] {
+  width: 100%; 
+  padding: 10px; 
+  background-color: #878004; 
+  color: #fff; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+
+form label {
+  display: block; 
+  margin-bottom: 5px; 
+  font-weight: bold; 
+}
+
+
+.error-message {
+  color: red; 
+  margin-top: 5px; 
+}
+
+.botonChances {
+  font-family: Arial, Helvetica, sans-serif, bold;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #000000; 
+  color: #fff; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer;
+}
+.botonComprar{
+  font-family: Arial, Helvetica, sans-serif, bold;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #000000; 
+  color: #fff; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer;
 }

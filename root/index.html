@@ -47,10 +47,9 @@
       </nav>
       <h1>PUTATO REGALOS</h1>
       <div class="icons">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-tiktok"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-solid fa-bag-shopping"></i>
+        <a href="https://www.instagram.com/putatoregalos/" class="fa-brands fa-instagram"></a>
+        <a href="https://www.tiktok.com/@putato0" class="fa-brands fa-tiktok"></a>
+        <a href="https://www.youtube.com/@PutatoPutato" class="fa-brands fa-youtube"></a>
       </div>
     </header>
     <main class="flex">
@@ -88,9 +87,34 @@
         </svg>
       </div>
       <!--Waves end-->
+      <div><h3>¡COMPRA TUS CHANCES!</h3></div>
       <img src="./thai-nguyen-AtYWWis5ZDM-unsplash.jpg" alt="iphone image" />
       <p>IPHONE 15 PRO MAX</p>
-      <button>COMPRAR 1 CHANCE</button>
+
+      <select id="chances" class="botonChances">
+        <option value="1">1 CHANCE</option>
+        <option value="5">5 CHANCES</option>
+        <option value="10">10 CHANCES</option>
+      </select>
+      <button id="comprar" class="botonComprar">Comprar</button>
+      
+
+      <form action="ProcesarFormularioServlet" method="POST" enctype="multipart/form-data">
+        <div>
+          <label for="comprobante">Subir comprobante de pago:</label>
+          <input type="file" id="comprobante" name="comprobante" accept="image/*" required>
+        </div>
+        <div>
+          <label for="instagram">Cuenta de Instagram:</label>
+          <input type="text" id="instagram" name="instagram" required>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+      
     </section>
+
+
+
+<script>src='./js/index.js'</script>
   </body>
 </html>

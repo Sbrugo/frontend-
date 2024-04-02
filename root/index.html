@@ -47,9 +47,18 @@
       </nav>
       <h1>PUTATO REGALOS</h1>
       <div class="icons">
-        <a href="https://www.instagram.com/putatoregalos/" class="fa-brands fa-instagram"></a>
-        <a href="https://www.tiktok.com/@putato0" class="fa-brands fa-tiktok"></a>
-        <a href="https://www.youtube.com/@PutatoPutato" class="fa-brands fa-youtube"></a>
+        <a
+          href="https://www.instagram.com/putatoregalos/"
+          class="fa-brands fa-instagram"
+        ></a>
+        <a
+          href="https://www.tiktok.com/@putato0"
+          class="fa-brands fa-tiktok"
+        ></a>
+        <a
+          href="https://www.youtube.com/@PutatoPutato"
+          class="fa-brands fa-youtube"
+        ></a>
       </div>
     </header>
     <main class="flex">
@@ -58,7 +67,6 @@
         NUESTRAS RIQUEZAS, SINO MOSTRARLES SUS PROPIAS CAPACIDADES
       </h1>
     </main>
-    <section class="flex column">
       <!--Waves Container-->
       <div>
         <svg
@@ -87,34 +95,83 @@
         </svg>
       </div>
       <!--Waves end-->
+      <section class="flex column"> 
       <div><h3>¡COMPRA TUS CHANCES!</h3></div>
       <img src="./thai-nguyen-AtYWWis5ZDM-unsplash.jpg" alt="iphone image" />
       <p>IPHONE 15 PRO MAX</p>
 
       <select id="chances" class="botonChances">
-        <option value="1">1 CHANCE</option>
-        <option value="5">5 CHANCES</option>
-        <option value="10">10 CHANCES</option>
+        <option value="1">COMPRAR 1 CHANCE</option>
+        <option value="5">COMPRAR 5 CHANCES</option>
+        <option value="10">COMPRAR 10 CHANCES</option>
       </select>
-      <button id="comprar" class="botonComprar">Comprar</button>
-      
+      <!-- <button id="comprar" class="botonComprar">COMPRAR</button> -->
 
-      <form action="ProcesarFormularioServlet" method="POST" enctype="multipart/form-data">
-        <div>
-          <label for="comprobante">Subir comprobante de pago:</label>
-          <input type="file" id="comprobante" name="comprobante" accept="image/*" required>
+
+    <!--Waves Container-->
+    <div class="second-wave">
+      <svg
+        class="waves"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shape-rendering="auto"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="0"
+            fill="transparent"
+            stroke="#000"
+          />
+        </g>
+      </svg>
+    </div>
+    <!--Waves end-->
+    <footer>
+      <div class="flex column">
+        <h1>CONTÁCTANOS</h1>
+        <p>
+          Cuenta sobre qué pueden consultar y qué deben esperar después de que
+          se comuniquen con tigo. No olvides elegir una opción de almacenamiento
+          para los mensajes que recibas.
+        </p>
+      </div>
+      <form
+        action="ProcesarFormularioServlet"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+      <div class="footer-form flex column">
+        <label>Correo electrónico (obligatorio)</label>
+        <input type="email" />
+        <label>Mensaje (obligatorio)</label>
+        <textarea></textarea>
+        <label>Instagram (obligatorio)</label>
+        <input type="text" id="instagram" name="instagram" required />
+        <label>COMPROBANTE DE PAGO</label>
+        <input
+            type="file"
+            id="comprobante"
+            name="comprobante"
+            accept="image/*"
+            required
+          />
         </div>
-        <div>
-          <label for="instagram">Cuenta de Instagram:</label>
-          <input type="text" id="instagram" name="instagram" required>
-        </div>
-        <button type="submit">Enviar</button>
-      </form>
-      
-    </section>
-
-
-
-<script>src='./js/index.js'</script>
+        <button id="footer-button">ENVIAR</button>
+      </div>
+    </form>
+    </footer>
+    <script>
+      src = "./js/index.js";
+    </script>
   </body>
 </html>
